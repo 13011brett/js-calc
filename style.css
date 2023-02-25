@@ -1,0 +1,55 @@
+*{
+    font-size: 20px;
+    font-family:fantasy;
+}
+
+body{
+    display: flex;
+    flex:1;
+    justify-content: center;
+   
+    width:100vw;
+    height:100vh;
+}
+.parent-flex-container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 20vw;
+    border: 1px solid black;
+    height: 60vh;
+    
+    flex-wrap: 1;
+
+}
+.flex-container{
+    display:flex;
+    flex-grow: 0;
+    background-color: gray;
+    height:10vh;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.flex-calc-input-display{
+    display: flex;
+    padding:10px;
+    color:white;
+    text-shadow: 1px 1px 2px white;
+
+}
+
+.symbols{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 0;
+    background-color: orange;
+    width: 25%;
+    height:21%;
+    align-self: end;
+
+    
+
+}
