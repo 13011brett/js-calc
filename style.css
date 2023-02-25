@@ -1,6 +1,7 @@
 *{
     font-size: 20px;
     font-family:fantasy;
+    
 }
 
 body{
@@ -15,6 +16,7 @@ body{
     display: flex;
     align-self: center;
     flex-direction: column;
+    
     flex-grow: 0;
     width: 20vw;
     border: 1px solid black;
@@ -23,13 +25,29 @@ body{
     flex-wrap: 1;
 
 }
-.flex-container{
+.flex-side-container{
     display:flex;
     flex-grow: 0;
     background-color: gray;
-    height:10vh;
+    height:30%;
     align-items: center;
     justify-content: end;
+    
+}
+
+.flex-up-container{
+    display:flex;
+    
+    row-gap: 10px;
+    
+    width:100%;
+    height:100%;
+    flex-grow: 0;
+    align-items: end;
+    
+    border: 2px solid red;
+    
+    
     
 }
 
@@ -37,19 +55,35 @@ body{
     display: flex;
     padding:10px;
     color:white;
+    
     text-shadow: 1px 1px 2px white;
 
 }
 
 .symbols{
     display:flex;
+    color:whitesmoke;
     flex-direction: row;
     flex-grow: 0;
     background-color: orange;
+    background-image: url("equal_sign.png") 100px;
     width: 25%;
-    height:21%;
-    align-self: end;
+    height:20%;
+    margin:5px; 
+    border-radius: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
     
+    
+}
 
+.tester{
+    border: 1px solid black;
+}
+
+.symbol{
+    font-size:20px;
+    
 }
