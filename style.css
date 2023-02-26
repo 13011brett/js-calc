@@ -1,7 +1,7 @@
 *{
     
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-family:MS PGothic;
     
 }
 
@@ -26,7 +26,7 @@ button{
     flex-direction: column;
     
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: 500px;
     border: 1px solid black;
     height: 600px;
@@ -38,6 +38,8 @@ button{
     display:flex;
     flex-grow: 0;
     background-color: gray;
+    border: 5px solid rgb(66, 55, 55);
+    border-radius: 5%;
     height:30%;
     align-items: center;
     justify-content: end;
@@ -65,7 +67,6 @@ button{
     display: flex;
     padding:10px;
     color:white;
-    
     text-shadow: 1px 1px 2px white;
 
 }
@@ -79,7 +80,7 @@ button{
     width: 95%;
     height:20%;
     margin:3px; 
-    border-radius: 25%;
+    border-radius: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -117,8 +118,17 @@ button{
     background-color: grey;
     flex-grow: 1;
     border:5px solid black;
+    border-radius: 25%;
     
     height:10%;
     width:26%;
     
+}
+
+.num:hover{
+    background-color: lightgray;
+}
+
+.symbols:hover{
+    background-color: rgb(252, 189, 71);
 }
