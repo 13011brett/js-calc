@@ -1,10 +1,12 @@
 *{
+    
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     
 }
 
 body{
+    background-color: black;
     display: flex;
     flex:1;
     justify-content: center;
@@ -12,15 +14,22 @@ body{
     width:100vw;
     height:100vh;
 }
+
+button{
+    text-decoration: none;
+
+}
+
 .parent-flex-container{
     display: flex;
     align-self: center;
     flex-direction: column;
     
     flex-grow: 0;
-    width: 20vw;
+    flex-shrink: 0;
+    width: 500px;
     border: 1px solid black;
-    height: 60vh;
+    height: 600px;
     
     flex-wrap: 1;
 
@@ -87,9 +96,11 @@ body{
     font-size:20px;
     
 }
+
 .numbers{
     display:flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     gap: 0px;
     
@@ -102,10 +113,12 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    border:1px solid blue;
-    background-color: white;
+
+    background-color: grey;
     flex-grow: 1;
+    border:5px solid black;
     
     height:10%;
-    width:25%;
+    width:26%;
+    
 }
