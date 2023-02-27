@@ -28,7 +28,7 @@ button{
     flex-grow: 0;
     flex-shrink: 1;
     width: 500px;
-    border: 1px solid black;
+    border: 1px solid rgb(66, 55, 55);
     height: 600px;
     
     flex-wrap: 1;
@@ -38,8 +38,8 @@ button{
     display:flex;
     flex-grow: 0;
     background-color: gray;
-    border: 5px solid rgb(66, 55, 55);
-    border-radius: 5%;
+    border: 1px solid black;
+    
     height:30%;
     align-items: center;
     justify-content: end;
@@ -49,6 +49,7 @@ button{
 .flex-up-container{
     display:flex;
     
+
     row-gap: 10px;
     
     width:100%;
@@ -125,10 +126,35 @@ button{
     
 }
 
+.option{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: grey;
+    flex-grow: 1;
+    border:5px solid black;
+    border-radius: 25%;
+    
+    height:10%;
+    width:26%;
+    
+}
+
 .num:hover{
     background-color: lightgray;
+    transition: 150ms ease-in-out;
+    width:35%;
+    height:12%;
+}
+.option:hover{
+    background-color: lightgray;
+    transition: 150ms ease-in-out;
+    width:35%;
+    height:12%;
 }
 
 .symbols:hover{
     background-color: rgb(252, 189, 71);
+    transition-duration: 150ms;
 }
