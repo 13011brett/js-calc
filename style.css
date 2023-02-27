@@ -16,9 +16,14 @@ body{
 }
 
 button{
+    color:black;
     text-decoration: none;
     background-color: transparent;
 
+
+}
+button:focus{
+    outline:none;
 }
 
 .parent-flex-container{
@@ -65,6 +70,11 @@ button{
     
 }
 
+.input-display{
+    pointer-events: none;
+
+}
+
 .symbols{
     display:flex;
     color:whitesmoke;
@@ -78,9 +88,6 @@ button{
     
 }
 
-.tester{
-    border: 1px solid black;
-}
 
 .symbol{
     background-color: orange;
