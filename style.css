@@ -29,7 +29,7 @@ button{
     flex-grow: 0;
     flex-shrink: 1;
     width: 500px;
-    border: 1px solid rgb(66, 55, 55);
+    border: 5px solid rgb(66, 55, 55);
     height: 600px;
     
     flex-wrap: 1;
@@ -49,20 +49,12 @@ button{
 
 .flex-up-container{
     display:flex;
-    
-
     row-gap: 10px;
-    
     width:100%;
     height:100%;
     flex-grow: 0;
     flex-shrink: 1;
-    align-items: end;
-    
-
-    
-    
-    
+    align-items: end;    
 }
 
 .flex-calc-input-display{
@@ -70,7 +62,7 @@ button{
     padding:10px;
     color:white;
     text-shadow: 1px 1px 2px white;
-
+    
 }
 
 .symbols{

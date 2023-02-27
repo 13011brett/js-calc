@@ -5,7 +5,7 @@ var symbols = document.querySelectorAll('.symbol');
 
 var currentSymbol;
 
-var currentNumber = '0';
+var currentNumber = '0';    
 var functionNumber = '';
 
 numbers.forEach(number => number.addEventListener('click', () => {
@@ -22,12 +22,13 @@ numbers.forEach(number => number.addEventListener('click', () => {
 }))
 
 symbols.forEach(symbol => symbol.addEventListener('click', () => {
-    if(symbol.textContent == '='){
+    if(currentSymbol != undefined || symbol.textContent == '='){
         currentNumber = operate(currentNumber, functionNumber, currentSymbol);
         numDisplay.textContent += " = " + currentNumber;
         functionNumber = '';
-        currentSymbol = undefined;
+        if(symbol.textContent == '=')  currentSymbol = undefined;
         return;
+        
     }
     currentSymbol = symbol.textContent;
     
@@ -37,6 +38,9 @@ symbols.forEach(symbol => symbol.addEventListener('click', () => {
 function equals(number){
     return Number(number);
 }
+
+
+
 
 clearNum.addEventListener('click', () => clear());
 
