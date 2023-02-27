@@ -66,7 +66,7 @@ function updateDisplay(){
      : numDisplay.textContent = currentNumber;
 }
 
-// To allow for decimals - does not update the display
+// To allow for decimals.
 decimal.addEventListener('click', () => {
     currentSymbol == undefined ? currentNumber = addOneDecimal(currentNumber) : 
     functionNumber = addOneDecimal(functionNumber);
